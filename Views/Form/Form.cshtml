@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form class = "form" action="result" method="post">
+    <h3>@ViewBag.Form</h3>
+
+    <p>Your Name: <input name='name_on_subm' type="text"></p>
+    <p>Dojo Location:
+        <select id="locations" name = "local">
+            <option value="San Jose">San Jose</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Chicago">Chicago</option>
+            <option value="New York">New Yorke</option>
+        </select>
+    </p>
+    <p>Favorite Language:
+        <input list="languages" name='lang'>
+        <datalist id="languages">
+            <option value="C#">
+            <option value="Python">
+            <option value="C++">
+            <option value="Java">
+            <option value="Java Script">
+        </datalist>
+    </p>
+    <p>Comment (optional):</p>
+    <textarea name = "comment" rows = "4" col = "50"></textarea>
+    <p><button type="submit">Submit</button></p><br>
+    </form>
+</body>
+</html>
